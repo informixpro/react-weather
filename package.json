@@ -2,10 +2,19 @@
   "name": "weather-report",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
+    "axios": "^0.18.0",
+    "loaders.css": "^0.1.2",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.23",
+    "node-sass": "^4.9.4",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-scripts": "2.1.1"
+    "react-loaders": "^3.0.1",
+    "react-places-autocomplete": "^7.2.0",
+    "react-scripts": "2.1.1",
+    "svg-react-loader": "^0.4.6"
   },
   "scripts": {
     "start": "react-scripts start",

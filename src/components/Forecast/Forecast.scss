@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+
+.Forecast {
+  border-top: 1px solid $gray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 16px;
+  padding-top: 16px;
+
+  &__day {
+    color: $accent;
+    font-size: 16px;
+    text-align: center;
+
+    @media (max-width: $small) {
+      font-size: 11px;
+    }
+  }
+
+  &__icon {
+    width: 50px;
+
+    @media (max-width: $small) {
+      width: 30px;
+    }
+  }
+}

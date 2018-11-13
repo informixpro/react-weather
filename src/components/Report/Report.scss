@@ -1,0 +1,36 @@
+@import "../../styles/variables";
+
+.Report {
+    background-color: $grayLighter;
+    border-radius: 3px;
+    box-shadow: 0 0 150px 0 rgba(0,0,0,0.5);
+    color: $accent;
+    display: flex;
+    flex-direction: column;
+    max-width: $medium;
+    min-height: 540px;
+    padding: 32px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    @media(max-width: $medium) {
+        min-height: 490px;
+        max-width: $small;
+        padding: 16px;
+    }
+
+    @media(max-width: $small) {
+        box-shadow: none;
+        max-width: 100%;
+        min-height: 100vh;
+    }
+}
+
+.Loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+

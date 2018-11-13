@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.WeatherIcon {
+    width: 100%;
+
+    svg {
+        fill: $accent;
+    }
+
+}

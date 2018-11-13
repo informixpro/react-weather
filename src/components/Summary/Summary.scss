@@ -1,0 +1,89 @@
+@import "../../styles/variables";
+
+.Row {
+  display: flex;
+  flex-wrap: wrap;
+
+  & + .Row {
+    padding-top: 16px;
+  }
+}
+
+.Col {
+  flex: 1;
+
+  @media (max-width: $small) {
+    flex: 0 1 100%;
+  }
+}
+
+.Summary {
+  font-size: 20px;
+
+
+  &__location {
+    font-size: 32px;
+    margin-bottom: 16px;
+    font-weight: 300;
+
+    @media (max-width: $small) {
+      font-size: 26px;
+    }
+  }
+
+  &__info {
+    font-size: 18px;
+
+    @media (max-width: $small) {
+      font-size: 16px;
+    }
+  }
+
+  &__conditions {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__temperature {
+    display: flex;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 1;
+    margin-left: 20px;
+
+    sup {
+      font-size: 12px;
+    }
+  }
+
+  &__details {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__detail {
+    margin-bottom: 30px;
+    width: 50%;
+
+    @media (min-width: $small + 1) and (max-width: $medium) {
+      width: 100%;
+      text-align: right;
+      margin-bottom: 5px;
+    }
+
+    @media (max-width: $small) {
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+
+  }
+}

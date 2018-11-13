@@ -1,0 +1,21 @@
+@import "./styles/variables";
+
+$primary-color: $accent;
+@import 'loaders.css/src/animations/line-scale.scss';
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: $accentDark;
+
+  @media(max-width: $small) {
+    align-items: flex-start;
+  }
+}
+
+*:before, *:after {
+  box-sizing: border-box;
+}
