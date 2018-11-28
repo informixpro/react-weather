@@ -1,7 +1,9 @@
 ## React Weather
-A simple app for displaying current weather conditions
-[http://informix.pro/demo/weather/](http://informix.pro/demo/weather/)
+A simple app for displaying current weather conditions.
 
+Live demo: [http://informix.pro/demo/weather/](http://informix.pro/demo/weather/)
+
+![React Weather Report](/screenshots/weather-screenshot.png?raw=true "React Weather Report")
 
 ### Running the project
 
